@@ -5,10 +5,12 @@ import {configureStore} from '@reduxjs/toolkit'
 import {Provider} from "react-redux"
 import userReducer from './features/user'
 import themeReducer from './features/theme'
+import backgroundReducer from "./features/background"
 const store=configureStore({
   reducer:{
     user:userReducer,
-    theme:themeReducer
+    theme:themeReducer,
+    background:backgroundReducer
   }
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
